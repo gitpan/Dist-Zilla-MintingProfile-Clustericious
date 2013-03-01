@@ -1,0 +1,27 @@
+#!/usr/bin/perl
+
+% my $name = lc $class;
+% $name =~ s/::/_/g;
+# PODNAME: <%= $name . "client" %>
+# ABSTRACT: Command line <%= $class %> client
+# VERSION
+
+=head1 SEE ALSO
+
+L<<%= $class %>>
+
+=cut
+
+use strict;
+use warnings;
+use <%= $class %>::Client;
+use Clustericious::Client::Command;
+use Log::Log4perl::CommandLine (':all', ':loginit' => <<"EOT");
+           log4perl.rootLogger = INFO, Screen
+           log4perl.appender.Screen = Log::Log4perl::Appender::ScreenColoredLevels
+           log4perl.appender.Screen.layout = Log::Log4perl::Layout::PatternLayout
+           log4perl.appender.Screen.layout.ConversionPattern = [%-5p] %d %F{1} (%L) %m %n
+EOT
+
+Clustericious::Client::Command->run(<%= $class %>::Client->new, @ARGV);
+
