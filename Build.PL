@@ -20,7 +20,7 @@ my %module_build_args = (
     "Graham Ollis <plicease\@cpan.org>"
   ],
   "dist_name" => "Dist-Zilla-MintingProfile-Clustericious",
-  "dist_version" => "0.01",
+  "dist_version" => "0.02",
   "license" => "perl",
   "module_name" => "Dist::Zilla::MintingProfile::Clustericious",
   "recommends" => {},

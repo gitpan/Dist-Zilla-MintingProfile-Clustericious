@@ -1,7 +1,7 @@
 package Dist::Zilla::MintingProfile::Clustericious;
 
 # ABSTRACT: Minting profile for Clustericious clients and servers
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 
 
 use Moose;
@@ -64,7 +64,7 @@ Dist::Zilla::MintingProfile::Clustericious - Minting profile for Clustericious c
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 

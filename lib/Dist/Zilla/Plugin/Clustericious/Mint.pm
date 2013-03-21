@@ -1,7 +1,7 @@
 package Dist::Zilla::Plugin::Clustericious::Mint;
 
 # ABSTRACT: Generate new Clustericious dist from templates
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 
 
 use Moose;
@@ -111,7 +111,7 @@ Dist::Zilla::Plugin::Clustericious::Mint - Generate new Clustericious dist from 
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 DESCRIPTION
 
